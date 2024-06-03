@@ -1,0 +1,18 @@
+{
+  "name": "socks5-nodejs",
+  "version": "1.0.0",
+  "description": "Socks5 Network Proxy Protocol Implementation in Node.js",
+  "bin": {
+    "sserver": "./src/bin/sserver.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/bin/sserver.js"
+  },
+  "author": "今晚不熬夜",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.13.0"
+  }
+}
