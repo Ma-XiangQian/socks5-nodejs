@@ -58,7 +58,7 @@ export class SocksServerConsult {
 
     // 断开连接
     close(){
-        this.socket.end();
+        this.socket.destroy();
     }
 
 }

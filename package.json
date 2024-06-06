@@ -1,6 +1,6 @@
 {
   "name": "socks5-nodejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Socks5 Network Proxy Protocol Implementation in Node.js",
   "bin": {
     "sserver": "./src/bin/sserver.js"
