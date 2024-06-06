@@ -8,7 +8,6 @@ import { lookup } from "dns";
 // 端口
 let port = 1080;
 
-let clientCount = 0;
 
 const server = net.createServer();
 

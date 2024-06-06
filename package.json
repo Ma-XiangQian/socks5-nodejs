@@ -8,7 +8,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/bin/sserver.js"
+    "start": "node src/bin/sserver.js",
+    "dev":"node src/bin/socksServer.js"
   },
   "author": "今晚不熬夜",
   "license": "ISC",
