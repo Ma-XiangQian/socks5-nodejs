@@ -1,4 +1,5 @@
 import { FirstConferData } from "./parseData.js";
+import { PasswordAuthData } from "./parseData.js";
 
 /**
  * @description 协商连接方式的处理模块，目前只支持无验证方式和用户名密码验证方式
@@ -36,5 +37,16 @@ export class HandleConsult {
             return Buffer.from([0x05,this.methods[this.method]]);
         }
         return Buffer.from([0x05,0xFF]);
+    }
+
+    /** 
+     * @description 用户和密码验证
+     * @param {PasswordAuthData} authData 验证的数据
+     */
+    passwordAuth(authData){
+        if(this.username== authData.uname && this.password == authData.passwd){
+            return true;
+        }
+        return false;
     }
 }

@@ -1,19 +1,21 @@
 {
   "name": "socks5-nodejs",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Socks5 Network Proxy Protocol Implementation in Node.js",
-  "bin": {
-    "sserver": "./src/bin/sserver.js"
-  },
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/bin/sserver.js",
-    "dev":"node src/bin/socksServer.js"
+    "start": "node bin/sserver.js",
+    "dev": "node bin/socksPromise.js",
+    "dev c": "node bin/sockwsClient.js",
+    "dev s": "node bin/sockwsServer.js",
+    "dev dns": "node bin/udp_test.js"
   },
   "author": "今晚不熬夜",
   "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.2"
+  },
   "dependencies": {
-    "@types/node": "^20.13.0"
+    "ws": "^8.17.0"
   }
 }

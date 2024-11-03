@@ -1,8 +1,14 @@
 # Socks5-Nodejs
 
-用node.js实现的socks5协议，目前支持tcp协议了，但是还是有点问题，其他协议还在开发中。（纯小白👀）
+Nodejs实现的`Socks5`协议，用于服务器端的代理服务。
 
-# 食用方法
+The Socks5 protocol implemented by Nodejs is used for server-side proxy services.
+
+## 功能实现(functional realization)
+- 支持无校验和用户/密码认证
+- 流量转发目前只支持`tcp`，`udp`后续更新
+
+## 使用方法
 ```bash
-npm start
+npm run dev
 ```
