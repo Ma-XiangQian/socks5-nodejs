@@ -9,10 +9,7 @@ const server_options = {
 };
 
 const webScoket = {
-    host:"ws://38.6.164.52",
-    // host:"0.0.0.0",
-    // host:"wss://108.61.223.35",
-    // host:"wss://熬夜熬到.icu",
+    host:"ws://212.21.1.1.",
     port:8080,
 }
 
@@ -24,7 +21,7 @@ const server = net.createServer(function(socket){
     socket.once("data",function(data){
         try{
             const conferData = new FirstConferData(data);
-            const handleResult = new HandleConsult(conferData,"username-password","root","0328");
+            const handleResult = new HandleConsult(conferData,"username-password","root","1234");
             socket.write(handleResult.toBuffer());
             // 协商失败，关闭连接
             if(!handleResult.status){
